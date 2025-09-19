@@ -4,3 +4,4 @@ def call(string project, string tag, string credentialsId ){
   sh 'docker tag ${project}:${tag} $username/${project}:${tag}'
   sh 'docker push $username/$project:${tag}'
 }
+}
